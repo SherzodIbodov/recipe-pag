@@ -11,9 +11,12 @@
 
 body {
   background: #f3e5d7;
+  padding-top: 123px;
 }
 
 .wrapper {
+  border-radius: 24px;
+  margin-top: 130px;
   max-width: 736px;
   margin: 0 auto;
   background: white;
@@ -48,6 +51,9 @@ body {
   background-color: #fff7fb;
   font-family: Outfit;
 }
+.wrapper ul li {
+  padding-left: 15px;
+}
 .wrapper ul span {
   font-size: 16px;
   line-height: 24px;
@@ -80,16 +86,19 @@ body {
   line-height: 28px;
   color: #854632;
   font-family: Young serif;
-  padding: 24px 0;
 }
 .wrapper .instruduction {
   width: 100%;
   max-width: 656px;
   padding-bottom: 32px;
 }
+.wrapper .instruduction h2 {
+  padding: 24px 0;
+}
 .wrapper .instruduction ol {
   display: grid;
-  gap: 24px;
+  gap: 8px;
+  padding-left: 15px;
 }
 .wrapper .instruduction ol li {
   font-size: 16px;
@@ -106,6 +115,9 @@ body {
   font-family: Outfit;
   font-weight: 700;
   line-height: 24px;
+}
+.wrapper .table h2 {
+  padding: 24px 0;
 }
 .wrapper .table p {
   color: #5f564d;
@@ -132,4 +144,17 @@ body {
   line-height: 24px;
   font-size: 16px;
   font-family: Outfit;
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    padding: 0px;
+    border-radius: none;
+  }
+  .wrapper .container {
+    padding: 0 32px;
+  }
+  .wrapper h1 {
+    font-size: 36px;
+  }
 }
