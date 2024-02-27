@@ -51,8 +51,8 @@ body {
   background-color: #fff7fb;
   font-family: Outfit;
 }
-.wrapper ul li {
-  padding-left: 15px;
+.wrapper ul .time {
+  padding-left: 28px;
 }
 .wrapper ul span {
   font-size: 16px;
@@ -77,15 +77,21 @@ body {
   color: #854632;
 }
 .wrapper .ingredents {
-  background: none;
   font-family: Outfit;
+  display: grid;
 }
-.wrapper h2 {
+.wrapper .ingredents h2 {
+  margin-bottom: -24px;
   font-size: 28px;
   font-weight: 400;
   line-height: 28px;
   color: #854632;
   font-family: Young serif;
+}
+.wrapper .ingredents ul {
+  background: none;
+  display: grid;
+  gap: 8px;
 }
 .wrapper .instruduction {
   width: 100%;
@@ -94,6 +100,11 @@ body {
 }
 .wrapper .instruduction h2 {
   padding: 24px 0;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #854632;
+  font-family: Young serif;
 }
 .wrapper .instruduction ol {
   display: grid;
@@ -117,9 +128,15 @@ body {
   line-height: 24px;
 }
 .wrapper .table h2 {
-  padding: 24px 0;
+  padding-top: 32px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #854632;
+  font-family: Young serif;
 }
 .wrapper .table p {
+  padding: 24px;
   color: #5f564d;
   font-weight: 400;
   line-height: 24px;
@@ -132,7 +149,7 @@ body {
 }
 .wrapper .table table tr td {
   color: #5f564d;
-  padding: 12px;
+  padding: 12px 32px;
   border-bottom: 1px solid #e3ddd7;
   font-size: 16px;
   font-weight: 400;
@@ -147,6 +164,9 @@ body {
 }
 
 @media (max-width: 760px) {
+  body {
+    padding: 0;
+  }
   .wrapper {
     padding: 0px;
     border-radius: none;

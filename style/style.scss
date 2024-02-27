@@ -46,8 +46,8 @@ body {
     padding: 28px;
     background-color: #fff7fb;
     font-family: Outfit;
-    li {
-      padding-left: 15px;
+    .time {
+      padding-left: 28px;
     }
     span {
       font-size: 16px;
@@ -73,22 +73,33 @@ body {
     }
   }
   .ingredents {
-    background: none;
     font-family: Outfit;
-  }
-  h2 {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #854632;
-    font-family: Young serif;
+    display: grid;
+    h2 {
+      margin-bottom: -24px;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #854632;
+      font-family: Young serif;
+    }
+    ul {
+      background: none;
+      display: grid;
+      gap: 8px;
+    }
   }
   .instruduction {
     width: 100%;
     max-width: 656px;
     padding-bottom: 32px;
-    h2{
+    h2 {
       padding: 24px 0;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #854632;
+      font-family: Young serif;
     }
     ol {
       display: grid;
@@ -113,10 +124,16 @@ body {
     }
   }
   .table {
-    h2{
-      padding: 24px 0;
+    h2 {
+      padding-top: 32px;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #854632;
+      font-family: Young serif;
     }
     p {
+      padding: 24px;
       color: #5f564d;
       font-weight: 400;
       line-height: 24px;
@@ -129,7 +146,7 @@ body {
       tr {
         td {
           color: #5f564d;
-          padding: 12px;
+          padding: 12px 32px;
           border-bottom: 1px solid #e3ddd7;
           font-size: 16px;
           font-weight: 400;
@@ -147,9 +164,12 @@ body {
   }
 }
 @media (max-width: 760px) {
+  body {
+    padding: 0;
+  }
   .wrapper {
     padding: 0px;
-    border-radius:none;
+    border-radius: none;
     .container {
       padding: 0 32px;
     }
